@@ -1,0 +1,286 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Coûts élevés - Ingénierie Écologique</title>
+	<link rel = "icon" href=https://zupimages.net/up/23/21/yc1b.png
+	type = "image/x-icon">
+
+<!-- Nécessaire pour le bon fonctionnement de la police Dancing Script : -->
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+<style>
+.centrer {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+text-align: center;
+}
+.specialfont1 {
+font-family: 'Dancing Script', cursive;
+}
+.specialfont2 {
+font-family: 'Pangolin', cursive;
+color : darkgray;
+}
+.sous_titre {
+   word-wrap: break-word;
+   max-width: 60%;
+}
+.arrondir {
+  border-radius:30px;
+}
+
+
+.clignote {
+  color:white;
+  animation: clignote 2s linear infinite;
+}
+
+@keyframes clignote {  
+  50% { opacity: 0; }
+}
+
+.div-text {
+  padding: 10px;
+}
+
+
+ul {
+      text-align: center;
+      align-content : center;
+    }
+li {
+      text-align: center;
+    }
+/* CSS pour le menu */
+
+#right-menu {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 12%;
+      height: 100%;
+      background-color: #f0f0f0;
+      z-index: 1;
+    }
+    
+    #right-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 36% 0;
+    }
+    
+    #right-menu li {
+      margin-bottom: 10px;
+    }
+    
+    #right-menu a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    
+    #right-menu a:hover {
+      background-color: #ccc;
+    }
+
+    #left-menu {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 12%;
+      height: 100%;
+      background-color: #f0f0f0;
+      z-index: 1;
+    }
+    
+    #left-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 36% 0;
+    }
+    
+    #left-menu li {
+      margin-bottom: 10px;
+    }
+    
+    #left-menu a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    
+    #left-menu a:hover {
+      background-color: #ccc;
+    }
+    /* CSS pour le bandeau */
+#header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  transition: width 0.3s ease;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 24px;
+  transition: margin-left 0.3s ease;
+}
+#header.scrolled {
+  height: -0.5%; /* Largeur réduite du bandeau */
+}
+
+#header.scrolled h1 {
+  margin-left: -5%; /* Décalage du texte vers la gauche */
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Couleur et opacité du texte de superposition */
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header-overlay.show-overlay {
+  opacity: 1;
+}
+
+
+#bottomButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: lightgreen;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  opacity: 0.5;
+}
+
+#bottomButton:hover {
+  background-color: darkgreen;
+  opacity: 1;
+}
+
+#bottomButton.scrolled {
+  background-color: forestgreen;
+  opacity: 0.8;
+}
+
+#bottomButton.scrolled:hover {
+  background-color: forestgreen;
+  opacity: 1;
+}
+
+#buttonContainer {
+  position: fixed;
+  bottom: 2%;
+  left: 47%;
+}
+
+</style>
+</head>
+<body>
+<div id="left-menu">
+    <ul>
+      <li><a href=".\page_1.html", class = "specialfont2">Effets imprévus</a></li>
+      <li><a href=".\page_2.html", class = "specialfont2">Compréhension scientifique limitée</a></li>
+      <li><a href=".\page_3.html", class = "specialfont2">Coûts élevés</a></li>
+    </ul>
+  </div>
+
+  <div id="right-menu">
+    <ul>
+      <li><a href="..\index.html", class = "specialfont2">Menu</a></li>
+      <li><a href=".\page_sources.html" class="specialfont2 menu-button">Sources</a></li>
+      <li><a href=".\page_documents.html" class="specialfont2">Documents essentiels</a></li>
+    </ul>
+  </div>
+  
+<div id="header">
+    <h1 class = "centrer specialfont1" id = "header-title">l'Ingéniérie Écologique</h1>
+  </div>
+<br><br><br><br>
+<h1 class = "centrer specialfont2"><u>Coûts élevés</u></h1>
+<div class="centrer div-text" style="width: 55%; border-radius: 20px / 20px;  padding-top: 25px; padding-bottom: 5px;border: 50px seagreen; text-align: center; background: rgba(20,320,174, 0.3);">
+<h3 class = "centrer specialfont2"><u>Lutter contre l'euphorisation</u></h3>
+<h3 class = "centrer specialfont2">Des projets sont envisagés afin de lutter contre l’eutrophisation des lacs, comme ici pour le lac de la Veyre en amont du lac d’Aydat en Puy-de-Dôme. Pour cela, l’une des actions possibles est le reméandrage.</h3>
+</div>
+<br>
+<div class="centrer div-text" style="width: 55%; border-radius: 20px / 20px;  padding-top: 25px; padding-bottom: 5px;border: 50px seagreen; text-align: center; background: rgba(120,290,10, 0.3);">
+<h3 class = "centrer specialfont2"><u>Réamandrage</u></h3>
+<h3 class = "centrer specialfont2">Le réamandrage est une technique consistant à allonger le tracé et à réduire la pente d'un cours d'eau pour rendre sa morphologie plus sinueuse et lui faire ainsi retrouver ses fonctions hydrobiologiques. De plus, le reméandrage peut, par exemple, favoriser la régulation du régime des eaux, améliorer le niveau de la nappe phréatique ou permettre la préservation et la diversification d'habitats aquatiques.
+</h3>
+</div>
+<br>
+<div class="centrer div-text" style="width: 55%; border-radius: 20px / 20px;  padding-top: 25px; padding-bottom: 5px;border: 50px seagreen; text-align: center; background: rgba(20,320,174, 0.3);">
+<h3 class = "centrer specialfont2"><u>Coûts très élevés</u></h3>
+<h3 class = "centrer specialfont2">Cependant le coût du projet est élevé, avec un coût d’étude de 23 000 €, auquel est ajouté le coût des travaux de 60 000 €. Le projet aurait donc un coût total de 83 000 €.
+Afin d’améliorer l’état général du site, un autre projet pourrait voir le jour, la réhabilitation. Il s'agit d’un ensemble d’opérations (réaménagement, traitement de dépollution, confinement, résorption des déchets, contrôles institutionnels...) effectuées en vue de rendre un site apte à un usage donné. Malheureusement, le coût est davantage élevé que pour un projet de reméandrage, avec des coûts de d’études de plus de 140 000€ 
+et un coût de travaux de 1 170 000 €. L’ensemble des coûts ont une valeur de 1 310 000€. 
+
+</h3>
+</div>
+<br><br><br><br>
+  <div id="buttonContainer">
+    <a id="bottomButton" href = "..\index.html" class="specialfont2">Menu</a>
+  </div>
+<script type="text/javascript">
+  window.addEventListener('scroll', function() {
+  var button = document.getElementById('bottomButton');
+  var scrollPosition = window.innerHeight + window.pageYOffset;
+
+  if (scrollPosition >= document.body.offsetHeight) {
+    button.classList.add('scrolled');
+  } else {
+    button.classList.remove('scrolled');
+  }
+});
+
+window.addEventListener('scroll', function() {
+  var header = document.getElementById('header');
+  var scrollPosition = window.pageYOffset;
+
+  if (scrollPosition > 0) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+// Sélection de l'élément du titre
+var headerTitle = document.getElementById('header-title');
+
+// Fonction pour gérer l'événement de défilement
+function handleScroll() {
+  // Vérifier la position de défilement
+  if (window.scrollY > 0) {
+    // Modifier le contenu du titre
+    headerTitle.textContent = "l'Ingéniérie Écologique : Coûts élevés";
+  } else {
+    // Rétablir le contenu du titre initial
+    headerTitle.textContent = "l'Ingéniérie Écologique";
+  }
+}
+
+// Ajouter un écouteur d'événement pour l'événement de défilement
+window.addEventListener('scroll', handleScroll);
+
+</script>
+</body>

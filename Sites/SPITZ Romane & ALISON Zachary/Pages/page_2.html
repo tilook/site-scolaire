@@ -1,0 +1,281 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Compréhension scientifique limitée - Ingénierie Écologique</title>
+	<link rel = "icon" href=https://zupimages.net/up/23/21/yc1b.png
+	type = "image/x-icon">
+
+
+<!-- Nécessaire pour le bon fonctionnement de la police Dancing Script : -->
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+<style>
+.centrer {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+text-align: center;
+}
+.specialfont1 {
+font-family: 'Dancing Script', cursive;
+}
+.specialfont2 {
+font-family: 'Pangolin', cursive;
+color : darkgray;
+}
+.sous_titre {
+   word-wrap: break-word;
+   max-width: 60%;
+}
+.arrondir {
+  border-radius:30px;
+}
+
+
+.clignote {
+  color:white;
+  animation: clignote 2s linear infinite;
+}
+
+@keyframes clignote {  
+  50% { opacity: 0; }
+}
+
+.div-text {
+  padding: 10px;
+}
+
+
+ul {
+      text-align: center;
+      align-content : center;
+    }
+li {
+      text-align: center;
+    }
+/* CSS pour le menu */
+
+#right-menu {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 12%;
+      height: 100%;
+      background-color: #f0f0f0;
+      z-index: 1;
+    }
+    
+    #right-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 36% 0;
+    }
+    
+    #right-menu li {
+      margin-bottom: 10px;
+    }
+    
+    #right-menu a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    
+    #right-menu a:hover {
+      background-color: #ccc;
+    }
+
+    #left-menu {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 12%;
+      height: 100%;
+      background-color: #f0f0f0;
+      z-index: 1;
+    }
+    
+    #left-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 36% 0;
+    }
+    
+    #left-menu li {
+      margin-bottom: 10px;
+    }
+    
+    #left-menu a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    
+    #left-menu a:hover {
+      background-color: #ccc;
+    }
+    /* CSS pour le bandeau */
+#header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  transition: width 0.3s ease;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 24px;
+  transition: margin-left 0.3s ease;
+}
+#header.scrolled {
+  height: -0.5%; /* Largeur réduite du bandeau */
+}
+
+#header.scrolled h1 {
+  margin-left: -5%; /* Décalage du texte vers la gauche */
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Couleur et opacité du texte de superposition */
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header-overlay.show-overlay {
+  opacity: 1;
+}
+
+
+#bottomButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: lightgreen;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  opacity: 0.5;
+}
+
+#bottomButton:hover {
+  background-color: darkgreen;
+  opacity: 1;
+}
+
+#bottomButton.scrolled {
+  background-color: forestgreen;
+  opacity: 0.8;
+}
+
+#bottomButton.scrolled:hover {
+  background-color: forestgreen;
+  opacity: 1;
+}
+
+#buttonContainer {
+  position: fixed;
+  bottom: 2%;
+  left: 45%;
+}
+
+
+</style>
+</head>
+<body>
+<div id="left-menu">
+    <ul>
+      <li><a href=".\page_1.html", class = "specialfont2">Effets imprévus</a></li>
+      <li><a href=".\page_2.html", class = "specialfont2">Compréhension scientifique limitée</a></li>
+      <li><a href=".\page_3.html", class = "specialfont2">Coûts élevés</a></li>
+    </ul>
+  </div>
+  <div id="right-menu">
+    <ul>
+      <li><a href="..\index.html", class = "specialfont2">Menu</a></li>
+      <li><a href=".\page_sources.html" class="specialfont2 menu-button">Sources</a></li>
+      <li><a href=".\page_documents.html" class="specialfont2">Documents essentiels</a></li>
+    </ul>
+  </div>
+<div id="header">
+    <h1 class = "centrer specialfont1"  id="header-title">L'ingénierie écologique</h1>
+  </div>
+<br><br><br><br>
+<h1 class = "centrer specialfont2"><u>Compréhension scientifique limitée</u></h1>
+<div class="centrer div-text" style="width: 55%; border-radius: 20px / 20px;  padding-top: 25px; padding-bottom: 5px;border: 50px seagreen; text-align: center; background: rgba(20,320,174, 0.3);">
+<h3 class = "centrer specialfont2"><u>Les écosystèmes : Comment ça marche ?</u></h3>
+<h3 class = "centrer specialfont2"> Les écosystèmes naturels sont des milieux très complexes: de nombreuses espèces interagissent entre elles, et avec leur environnement. La compréhension scientifique de ces milieux est actuellement incomplète, en effet, les ingénieurs écologiques ne comprennent pas et ne connaissent pas toutes les interactions complexes qui ont lieu. Cela peut avoir comme conséquence de rendre les solutions inefficaces, ou de créer des effets indésirables.</h3>
+</div>
+<br>
+<div class="centrer div-text" style="width: 55%; border-radius: 20px / 20px;  padding-top: 25px; padding-bottom: 5px;border: 50px seagreen; text-align: center; background: rgba(120,290,10, 0.3);">
+<h3 class = "centrer specialfont2"><u>Changements naturels au sein des écosystèmes</u></h3>
+<h3 class = "centrer specialfont2">Des changements naturels ont lieu dans les écosystèmes : on appelle ça la variabilité naturelle. Différents facteurs en sont la cause : on peut compter le climat, les cycles naturels, les perturbations naturelles et interactions entre espèces font influencer la structure et le fonctionnement des écosystèmes. Cette variabilité est très compliquée à prévoir, les ingénieurs peuvent alors se retrouver confrontés à des défis importants en tentant de concevoir des solutions à long terme.</h3>
+</div>
+<br>
+<div class="centrer div-text" style="width: 55%; border-radius: 20px / 20px;  padding-top: 25px; padding-bottom: 5px;border: 50px seagreen; text-align: center; background: rgba(20,320,174, 0.3);">
+<h3 class = "centrer specialfont2"><u>EN BREF...</u></h3>
+<h3 class = "centrer specialfont2">Bien que l'ingénierie écologique soit une discipline prometteuse pour restaurer et préserver les écosystèmes, elle est soumise à des limites liées à notre compréhension scientifique actuelle des écosystèmes & à la complexité des interactions écologiques. Il est donc essentiel que les ingénieurs écologiques continuent à améliorer leur compréhension scientifique et à adopter des stratégies adaptatives pour réduire les risques d'inefficacité et d'effets indésirables.</h3>
+</div>
+<br><br><br><br>
+  <div id="buttonContainer">
+    <a id="bottomButton" href = ".\page_3.html" class="specialfont2">Page suivante</a>
+  </div>
+<script type="text/javascript">
+  window.addEventListener('scroll', function() {
+  var button = document.getElementById('bottomButton');
+  var scrollPosition = window.innerHeight + window.pageYOffset;
+
+  if (scrollPosition >= document.body.offsetHeight) {
+    button.classList.add('scrolled');
+  } else {
+    button.classList.remove('scrolled');
+  }
+});
+
+window.addEventListener('scroll', function() {
+  var header = document.getElementById('header');
+  var scrollPosition = window.pageYOffset;
+
+  if (scrollPosition > 0) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+// Sélection de l'élément du titre
+var headerTitle = document.getElementById('header-title');
+
+// Fonction pour gérer l'événement de défilement
+function handleScroll() {
+  // Vérifier la position de défilement
+  if (window.scrollY > 0) {
+    // Modifier le contenu du titre
+    headerTitle.textContent = "l'Ingéniérie Écologique : Compréhension scientifique limitée";
+  } else {
+    // Rétablir le contenu du titre initial
+    headerTitle.textContent = "l'Ingéniérie Écologique";
+  }
+}
+
+// Ajouter un écouteur d'événement pour l'événement de défilement
+window.addEventListener('scroll', handleScroll);
+
+</script>
+</body>

@@ -1,0 +1,225 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Documents - Ingénierie Écologique</title>
+	<link rel = "icon" href=https://zupimages.net/up/23/21/yc1b.png
+	type = "image/x-icon">
+
+<!-- Nécessaire pour le bon fonctionnement de la police Dancing Script : -->
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+<style>
+.centrer {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+text-align: center;
+}
+.specialfont1 {
+font-family: 'Dancing Script', cursive;
+}
+.specialfont2 {
+font-family: 'Pangolin', cursive;
+color : darkgray;
+}
+.sous_titre {
+   word-wrap: break-word;
+   max-width: 60%;
+}
+.arrondir {
+  border-radius:30px;
+}
+
+
+.clignote {
+  color:white;
+  animation: clignote 2s linear infinite;
+}
+
+@keyframes clignote {  
+  50% { opacity: 0; }
+}
+
+.div-text {
+  padding: 10px;
+}
+
+
+ul {
+      text-align: center;
+      align-content : center;
+    }
+li {
+      text-align: center;
+    }
+/* CSS pour le menu */
+
+#right-menu {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 12%;
+      height: 100%;
+      background-color: #f0f0f0;
+      z-index: 1;
+    }
+    
+    #right-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 36% 0;
+    }
+    
+    #right-menu li {
+      margin-bottom: 10px;
+    }
+    
+    #right-menu a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    
+    #right-menu a:hover {
+      background-color: #ccc;
+    }
+
+    #left-menu {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 12%;
+      height: 100%;
+      background-color: #f0f0f0;
+      z-index: 1;
+    }
+    
+    #left-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 36% 0;
+    }
+    
+    #left-menu li {
+      margin-bottom: 10px;
+    }
+    
+    #left-menu a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    
+    #left-menu a:hover {
+      background-color: #ccc;
+    }
+    /* CSS pour le bandeau */
+#header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  transition: width 0.3s ease;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 24px;
+  transition: margin-left 0.3s ease;
+}
+#header.scrolled {
+  height: -0.5%; /* Largeur réduite du bandeau */
+}
+
+#header.scrolled h1 {
+  margin-left: -5%; /* Décalage du texte vers la gauche */
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Couleur et opacité du texte de superposition */
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header-overlay.show-overlay {
+  opacity: 1;
+}
+
+
+#bottomButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: seagreen;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#bottomButton:hover {
+  background-color: darkgreen;
+}
+
+#bottomButton.scrolled {
+  background-color: lightgreen;
+}
+
+#bottomButton.scrolled:hover {
+  background-color: forestgreen;
+}
+
+#buttonContainer {
+  position: fixed;
+  bottom: 2%;
+  left: 45%;
+}
+
+
+</style>
+</head>
+<body>
+<div id="left-menu">
+    <ul>
+      <li><a href=".\page_1.html", class = "specialfont2">Effets imprévus</a></li>
+      <li><a href=".\page_2.html", class = "specialfont2">Compréhension scientifique limitée</a></li>
+      <li><a href=".\page_3.html", class = "specialfont2">Coûts élevés</a></li>
+    </ul>
+  </div>
+
+  <div id="right-menu">
+    <ul>
+      <li><a href="..\index.html", class = "specialfont2">Menu</a></li>
+      <li><a href=".\page_sources.html" class="specialfont2 menu-button">Sources</a></li>
+      <li><a href=".\page_documents.html" class="specialfont2">Documents essentiels</a></li>
+    </ul>
+  </div>
+  
+<div id="header">
+    <h1 class = "centrer specialfont1"  id="header-title">L'ingénierie écologique</h1>
+  </div>
+<br><br><br><br>
+<h1 class = "centrer specialfont2"><u>Les Documents</u></h1>
+<div class="centrer" style="width: 55%; border-radius: 20px / 20px;  padding-top: 25px; padding-bottom: 5px;border: 50px seagreen; text-align: center; background: rgba(200,200,200, 0.3);">
+<h4 class = "centrer specialfont2">Voici les documents fournis et utilisés pour notre site :</h4>
+<ul>
+<li class = "centrer"> <a href="..\Documents\réhabilitation_d_une_zone_humide.pdf" , target="_blank", class = "specialfont2">Réhabitilitation d'une zone humide</a></li>
+<li class = "centrer"> <a href="..\Documents\doc11.pdf", class = "specialfont2">Document d'étude</a></li>
+</ul>
+</div>
+</body>
