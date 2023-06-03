@@ -9,6 +9,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <style>
 .centrer {
 display: block;
@@ -17,6 +18,7 @@ margin-right: auto;
 margin-top: auto;
 text-align: center;
 }
+
 #header {
 	position: fixed;
   background-color: #f0f0f0;
@@ -31,6 +33,12 @@ text-align: center;
   margin: 0;
   font-size: 24px;
   transition: margin-left 0.3s ease;
+  font-family: "Montserrat", sans-serif; /* Exemple de police personnalisée */
+  font-size: 32px;
+  color: #333333;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
 }
 #header.scrolled {
   height: -0.5%;
@@ -101,7 +109,24 @@ border-radius:30px;
   background-color: #E6E6E6;
   margin: 10px;
   transition: transform 0.3s;
+  transform: scale(1);
 }
+.square.appear {
+  /* Animation d'apparition */
+  animation: appear 0.5s ease-in-out;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 #bottomButton {
   display: inline-block;
   background-color: #bfbfbf;
@@ -204,6 +229,37 @@ border-radius:30px;
   transform: scale(0.8);
   opacity: 0.5;
 }
+@keyframes wave {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+.square {
+  position: relative;
+}
+.square::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+  animation: wave 3s infinite;
+  animation-delay: 120s;
+  border-radius: 30px;
+  opacity: 0;
+}
 #bottomBar {
       bottom: 0;
       left: 0;
@@ -211,6 +267,7 @@ border-radius:30px;
       color: #fff;
       padding: 10px;
       text-align: center;
+
     }
 </style>
 </head>
@@ -224,7 +281,6 @@ border-radius:30px;
       <h2 class="specialfont2 centrer div-text"><u>L'ingénierie écologique</u></h2>
       <h4 class="specialfont3 centrer div-text"><i>par Romane SPITZ & Zachary ALISON</i></h4>
       <a id="bottomButton" href="./Sites/SPITZ Romane & ALISON Zachary/index.html" class="specialfont2 centrer arrondir" style="line-height: 300%">Visiter cette page</a>
-
     </div>
     <div class="square arrondir"  style ="background:rgba(0,255,255,0.3);">
       <h2 class="specialfont2 centrer div-text"><u>La mer d'Aral</u></h2>
@@ -386,6 +442,13 @@ window.addEventListener('scroll', function() {
     header.classList.add('scrolled');
   } else {
     header.classList.remove('scrolled');
+  }
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+  var squares = document.getElementsByClassName('square');
+  for (var i = 0; i < squares.length; i++) {
+    squares[i].classList.add('appear');
   }
 });
 </script>
